@@ -7,7 +7,7 @@
     </div>
     {% for todo in todos %}
         <div>
-            {{ todo.name }}
+            {{ todo.todo }}
             <a href="{% url 'edit-todo' todo.id %}">Edit</a>
             <a href="{% url 'delete-todo' todo.id %}">Delete</a>
             <hr>
